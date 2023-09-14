@@ -5,6 +5,22 @@ body{
 
 }
 
+.boton {
+    display: inline-block;
+    margin-left: 50%; /* Ajusta el margen según tus preferencias */
+    text-decoration: none;
+    background-color: black;
+    color: rgb(95,255,0);
+    padding: 7px 5px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color:rgb(95,255,0);
+    color:black;
+}
 /* Estilo para el formulario */
 .formulario {
     width: 60%;
@@ -34,6 +50,7 @@ input[type="text"],textarea,select {
     margin-bottom: 15px;
     border: 1px solid rgb(95,255,0);
     border-radius: 5px;
+    color: rgb(95,255,0);
 }
 select{
     font-family: 'Roboto Mono', monospace;
@@ -55,6 +72,3 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
