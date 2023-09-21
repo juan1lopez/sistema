@@ -60,3 +60,20 @@ input[type="email"],textarea,select {
     display: inline-block;
     color: rgb(95,255,0);
 }
+
+.boton {
+    display: inline-block;
+    margin-left: 50%; /* Ajusta el margen según tus preferencias */
+    text-decoration: none;
+    background-color: black;
+    color: rgb(95,255,0);
+    padding: 7px 5px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color:rgb(95,255,0);
+    color:black;
+}

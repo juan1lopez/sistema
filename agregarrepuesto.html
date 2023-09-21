@@ -3,99 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Repuesto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .container h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        input[type="text"], input[type="number"], select, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="camiones.css">
+    <title>Formulario de Producto</title>
 </head>
 <body>
-    <header>
-        <h1>Agregar Repuesto</h1>
-    </header>
-    <div class="container">
-        <h2>Información del Repuesto</h2>
-        <form action="guardar_repuesto.php" method="post">
-            <label for="nombre">Nombre del Repuesto:</label>
-            <input type="text" id="nombre" name="nombre" required>
+    <h1>Formulario de Producto</h1>
+    <form action="" method="POST">
 
-            <label for="marca">Marca:</label>
-            <input type="text" id="marca" name="marca" required>
+        <label >Nombre:</label>
+        <input type="text"  required>
+        <br>
 
-            <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" required>
+        <label >Descripción:</label>
+        <textarea  required></textarea>
+        <br>
 
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+        <label for="categoria">Categoría:</label>
+        <select name="" >
+            <option value="" disabled selected hidden>Seleccionar el categoria</option>
+            <option value="">Transporte</option>
+            <option value="">Maquinaria pesada</option>
+        </select>
+        <br>
 
-            <label for="ID_proveedor">ID del Proveedor:</label>
-            <input type="text" id="ID_proveedor" name="ID_proveedor" required>
-
-            <label for="categoria">Categoría:</label>
-            <select id="categoria" name="categoria" required>
-                <option value="Categoria1">Categoria 1</option>
-                <option value="Categoria2">Categoria 2</option>
-                <option value="Categoria3">Categoria 3</option>
-                <!-- Agrega más opciones de categoría según sea necesario -->
+        <label >seleccione el proveedor (FK):</label>
+            <select name="" >
+                <option value="" disabled selected hidden>Seleccionar el tipo</option>
+                <option value="">proveedor 1</option>
+                <option value="">proveedor 2</option>
+                <a href="anadirproveedor.html"><option value="">nuevo proveedor</option></a>
             </select>
+            <p>su proveedor es nuevo? <a href="anadirproveedor.html">clik aqui</a></p>
+        <br>
+        
 
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" required>
+        <label for="especificaciones">Especificaciones Técnicas:</label>
+        <textarea ></textarea>
+        <br>
 
-            <button type="submit">Agregar Repuesto</button>
-        </form>
-    </div>
+        <input type="submit" value="Guardar">
+    </form>
 </body>
 </html>
