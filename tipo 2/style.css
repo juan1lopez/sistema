@@ -65,22 +65,21 @@ div:hover{
 }
 
 .seccion {
-    width: 90%;
-    height: 30%;
+    width: 300px;
+    height: 50%;
     margin: 2px;
     text-align: center;
-    border: 1px solid rgb(99,255,0);
     border-radius: 10px;
     padding: 5px;
     align-items: right;
     display: flex;
 }
 .seccion1{
-    width: 90%;
-    height: 30%;
+    width: 300px;
+    height: 30px;
     margin: 2px;
     text-align: center;
-    border: 1px solid rgb(99,255,0);
+    /*border: 1px solid rgb(99,255,0);*/
     border-radius: 10px;
     padding: 5px;
     align-items: right;
@@ -90,12 +89,18 @@ p{
     display: inline;
 }
 .seccion img {
-    margin-top: 15px;
-    margin-right: 2%; 
+    margin-top: 4px;
+    margin-right: 6px; 
 }
 .seccion1 img {
-    margin-top: 8px;
-    margin-right: 0%; 
+    margin-top: 4px;
+    margin-right: 6px; 
+}
+.seccion a img {
+    margin: 0; /* Eliminar margen superior e izquierdo de la imagen */
+}
+.seccion1 a img {
+    margin: 0; /* Eliminar margen superior e izquierdo de la imagen */
 }
 a{
     text-decoration: none;
