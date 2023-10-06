@@ -8,22 +8,24 @@
     <!-- Agrega tus enlaces a hojas de estilo CSS y scripts JavaScript aquí -->
 </head>
 <body>
-    <h1>Cargar al Stock</h1>
-    
-    <!-- Formulario para cargar un repuesto utilizado de vuelta al stock -->
-    <form action="procesar_carga_al_stock.php" method="POST">
-        <label for="repuesto">Repuesto a Cargar al Stock:</label>
-        <select id="repuesto" name="repuesto" required>
-            <!-- Aquí puedes cargar dinámicamente las opciones de repuestos utilizados que se pueden cargar de vuelta al stock -->
-            <option value="repuesto1">Repuesto Utilizado 1</option>
-            <option value="repuesto2">Repuesto Utilizado 2</option>
-            <!-- Agrega más opciones según sea necesario -->
-        </select>
+    <div class="formulario">
+        <h1>Cargar al Stock</h1>
         
-        <label for="cantidad">Cantidad a Cargar al Stock:</label>
-        <input type="number" id="cantidad" name="cantidad" required>
-        
-        <input type="submit" value="Cargar al Stock">
-    </form>
+        <!-- Formulario para cargar un repuesto utilizado de vuelta al stock -->
+        <form action="procesar_carga_al_stock.php" method="POST">
+            <label for="repuesto">Repuesto a Cargar al Stock:</label>
+            <select id="repuesto" name="repuesto" required>
+                <!-- Aquí puedes cargar dinámicamente las opciones de repuestos utilizados que se pueden cargar de vuelta al stock -->
+                <option value="repuesto1">Repuesto Utilizado 1</option>
+                <option value="repuesto2">Repuesto Utilizado 2</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            
+            <label for="cantidad">Cantidad a Cargar al Stock:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            
+            <input type="submit" value="Cargar al Stock">
+        </form>
+    </div>
 </body>
 </html>
