@@ -76,20 +76,28 @@ div:hover{
     align-items: right;
     display: flex;
 }
+.consultas{
+    width: 98%;
+    height: 100px;
+    margin: 8px;
+    border: solid rgb(99,255,0);
+    border-radius: 10px;
+    padding: 8px;
+    align-items: center;
+    
+    text-align: center;
+
+}
+
 p{
     display: inline;
 }
-.seccion img {
-    margin-top: 4px;
-    margin-right: 6px; 
-}
+
 .seccion1 img {
     margin-top: 4px;
     margin-right: 6px; 
 }
-.seccion a img {
-    margin: 0; /* Eliminar margen superior e izquierdo de la imagen */
-}
+
 .seccion1 a img {
     margin: 0; /* Eliminar margen superior e izquierdo de la imagen */
 }
