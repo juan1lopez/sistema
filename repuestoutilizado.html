@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="camiones.css">
+    <title>Módulo de Repuestos Utilizados</title>
+    <!-- Agrega tus enlaces a hojas de estilo CSS y scripts JavaScript aquí -->
+</head>
+<body>
+    
+    <div class="formulario">
+        <h2>Registrar Repuesto Utilizado</h2>
+        <form action="procesar_registro.php" method="POST">
+            <label for="equipo">Equipo o Máquina:</label>
+            
+            <select id="repuesto" name="repuesto" required>
+                <option value="repuesto1">camion </option>
+                <option value="repuesto2">topadora</option>
+            </select>
+
+            <label for="repuesto">Repuesto Utilizado:</label>
+            <input type="text" id="equipo" name="equipo" required>
+
+            
+            <label for="cantidad">Cantidad Utilizada:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
