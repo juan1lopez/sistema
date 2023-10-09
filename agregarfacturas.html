@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="facturas.css">
+    <title>Factura</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Factura</h1>
+        <form>
+            <label for="datos">Tenés los datos:</label>
+            <input type="text" id="datos" name="datos" placeholder="Ingresa los datos" required>
+
+            <label for="precioSinIVA">Precio sin IVA:</label>
+            <input type="number" id="precioSinIVA" name="precioSinIVA" placeholder="Ingresa el precio sin IVA" required>
+
+            <label for="precioConIVA">Precio más el IVA:</label>
+            <input type="number" id="precioConIVA" name="precioConIVA" placeholder="Ingresa el precio con IVA" required>
+
+            <label for="detalle">Detalle del respuesto:</label>
+            <textarea id="detalle" name="detalle" placeholder="Ingresa el detalle del respuesto" rows="4" required></textarea>
+
+            <button type="submit">Guardar Factura</button>
+        </form>
+    </div>
+</body>
+</html>
