@@ -42,13 +42,13 @@ label {
 }
 
 /* Estilo para los campos de entrada de texto y el área de texto */
-input[type="text"],textarea,select {
+input[type="text"],input[type=number],textarea,select {
     font-family: 'Roboto Mono', monospace;
     background-color: black;
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid rgb(95,255,0);
+    border: 1px solid gray;
     border-radius: 5px;
     color: rgb(95,255,0);
 }
