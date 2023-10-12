@@ -42,7 +42,7 @@ label {
 }
 
 /* Estilo para los campos de entrada de texto y el área de texto */
-input[type="text"],input[type=number],textarea,select {
+input[type="text"],input[type=number],input[type="date"],textarea,select {
     font-family: 'Roboto Mono', monospace;
     background-color: black;
     width: 90%;
