@@ -15,6 +15,10 @@
             <input type="text" id="nombre" nmae="nombre" required>
             <br>
 
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+            <br>
+
             <label for="categoria">Categoría:</label>
             <select name="categoria" >
                 <option value="" disabled selected hidden>Seleccionar el categoria</option>
@@ -23,9 +27,7 @@
 
             </select>
             <br>
-            <label for="descripcion">Descripcion:</label>
-            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
-            <br>
+            
             <label for ="name" >seleccione el proveedor :</label>
                 <select name="proveedor" >
                     <option value="" disabled selected hidden>Seleccionar el tipo</option>
@@ -33,13 +35,7 @@
                     <option value="p2">proveedor 2</option>
                 </select>
                 <p>su proveedor es nuevo? <a href="anadirproveedor.html">clik aqui</a></p>
-            
-            <label for="precioSinIVA">Precio sin IVA:</label>
-            <input type="number" id="precioSinIVA" name="precioSinIVA" placeholder="Ingresa el precio sin IVA" required>
-
-            <label for="precioConIVA">Precio más el IVA:</label>
-            <input type="number" id="precioConIVA" name="precioConIVA" placeholder="Ingresa el precio con IVA" required>
-            
+            <br>
             <label for="almacen">Almacen en el que se encuentra:</label>
                 <select name="almacen" >
                     <option value="" disabled selected hidden>Seleccionar el tipo</option>
@@ -47,6 +43,15 @@
                     <option value="a2">Almacen 2</option>
                 </select>
             <br>
+            <label for="precioSinIVA">Precio sin IVA:</label>
+            <input type="number" id="precioSinIVA" name="precioSinIVA" placeholder="Ingresa el precio sin IVA" required>
+
+            <label for="precioConIVA">Precio más el IVA:</label>
+            <input type="number" id="precioConIVA" name="precioConIVA" placeholder="Ingresa el precio con IVA" required>
+            <br>
+            <label for="stock">ingrese el stock que desea cargar:</label>
+            <input type="number" id="stock" name="stock" placeholder="1" required>
+            
             <input type="submit" value="Guardar Datos"> <a href="../index.html" class="boton"> volver atras</a>
         </form>
     </div>

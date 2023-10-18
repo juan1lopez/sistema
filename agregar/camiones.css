@@ -39,10 +39,7 @@ h1 {
     display: inline-block;
     color: rgb(95,255,0);
     position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    
 }
 
 
