@@ -8,26 +8,28 @@
 </head>
 <body>
     <h1>Agregar Proveedor</h1>
-    <form action="#" method="">
     <div class="formulario">
-        <label>Nombre del Proveedor:</label>
-        <br>
-        <input type="text" placeholder="Ingrese el nombre del proveedor"><br><br>
+        <form action="/processproveedor" method="POST">
+        
+            <label for="nombre">Nombre del Proveedor:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre"placeholder="Ingrese el nombre del proveedor"><br><br>
 
-        <label>Dirección del Proveedor:</label>
-        <br>
-        <input type="text" placeholder="Ingrese la dirección del proveedor"><br><br>
+            <label for="direccion">Dirección del Proveedor:</label>
+            <br>
+            <input type="text" id="direccion"name="direccion"placeholder="Ingrese la dirección del proveedor"><br><br>
 
-        <label>Teléfono del Proveedor:</label>
-        <br>
-        <input type="number" placeholder="Ingrese el teléfono del proveedor"><br><br>
+            <label for="telefono">Teléfono del Proveedor:</label>
+            <br>
+            <input type="number" id="telefono"name="telefono"placeholder="Ingrese el teléfono del proveedor"><br><br>
 
-        <label>Correo Electrónico del Proveedor:</label>
-        <br>
-        <input type="email" placeholder="Ingrese el correo electrónico del proveedor"><br><br>
+            <label for="correo">Correo Electrónico del Proveedor:</label>
+            <br>
+            <input type="email"id="correo"name="correo" placeholder="Ingrese el correo electrónico del proveedor"><br><br>
 
-        <input type="submit" value="Agregar Proveedor"> <a href="../index.html" class="boton"> volver atras</a>
+            <input type="submit" value="Agregar Proveedor"> <a href="../index.html" class="boton"> volver atras</a>
+        </form>
+
     </div>
-    </form>
 </body>
 </html>
