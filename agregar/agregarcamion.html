@@ -6,26 +6,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="camiones.css"> <!-- Reemplaza "tu-archivo-de-estilos.css" con la ruta a tu archivo CSS -->
+    <link rel="stylesheet" href="camiones.css"> 
 
     <title>Añadir camion</title>
 </head>
 <body>
     <h1>Formulario para Cargar Datos</h1>
     <div class="formulario">
-        <form action="" method=""> <!-- Asegúrate de especificar la URL correcta en el atributo "action" para procesar los datos -->
+        <form action="/processcamion" method="POST"> 
             
             <label for="nombre">Nombre:</label>
             <input type="text" placeholder="Ingrese la marca y modelo" id="nombre" name="nombre" required><br>
 
-            <label for="descripcion">Modelo:</label>
-            <input type="text" placeholder="Ingrese el modelo" name="descripcion" required><br>
+            <label for="modelo">Modelo:</label>
+            <input type="text" placeholder="Ingrese el modelo" name="modelo" required><br>
 
             <label for="categoria">Categoría:</label>
             <select name="" >
                 <option value="" disabled selected hidden>Seleccionar el tipo</option>
-                <option value="">Transporte</option>
-                <option value="">Maquinaria pesada</option>
+                <option value="transporte">Transporte</option>
+                <option value="maquinaria pesada">Maquinaria pesada</option>
             </select>
             <br>
 
