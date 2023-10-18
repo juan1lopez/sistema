@@ -9,27 +9,28 @@
 <body>
     <h1>Formulario de Producto</h1>
     <div class="formulario">
-        <form action="" method="POST">
+        <form action="/process" method="POST">
 
-            <label >Nombre:</label>
-            <input type="text"  required>
+            <label for="nombre"  >Nombre:</label>
+            <input type="text" id="nombre" nmae="nombre" required>
             <br>
 
             <label for="categoria">Categoría:</label>
-            <select name="" >
+            <select name="categoria" >
                 <option value="" disabled selected hidden>Seleccionar el categoria</option>
-                <option value="">Transporte</option>
-                <option value="">Maquinaria pesada</option>
-                <option value="">Maquinaria gorda</option>
+                <option value="transporte">Transporte</option>
+                <option value="maquinaria pesada">Maquinariza pesada</option>
 
             </select>
             <br>
-
-            <label >seleccione el proveedor :</label>
-                <select name="" >
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+            <br>
+            <label for ="name" >seleccione el proveedor :</label>
+                <select name="proveedor" >
                     <option value="" disabled selected hidden>Seleccionar el tipo</option>
-                    <option value="">proveedor 1</option>
-                    <option value="">proveedor 2</option>
+                    <option value="p1">proveedor 1</option>
+                    <option value="p2">proveedor 2</option>
                 </select>
                 <p>su proveedor es nuevo? <a href="anadirproveedor.html">clik aqui</a></p>
             
@@ -39,16 +40,13 @@
             <label for="precioConIVA">Precio más el IVA:</label>
             <input type="number" id="precioConIVA" name="precioConIVA" placeholder="Ingresa el precio con IVA" required>
             
-            <label for="">Almacen en el que se encuentra:</label>
-                <select name="" >
+            <label for="almacen">Almacen en el que se encuentra:</label>
+                <select name="almacen" >
                     <option value="" disabled selected hidden>Seleccionar el tipo</option>
-                    <option value="">Almacen 1</option>
-                    <option value="">Almacen 2</option>
+                    <option value="a1">Almacen 1</option>
+                    <option value="a2">Almacen 2</option>
                 </select>
-            <label for="especificaciones">Especificaciones Técnicas:</label>
-            <textarea ></textarea>
             <br>
-
             <input type="submit" value="Guardar Datos"> <a href="../index.html" class="boton"> volver atras</a>
         </form>
     </div>
