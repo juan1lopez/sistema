@@ -13,17 +13,17 @@
 <body>
     <h1>Añadir almacen</h1>
     <div class="formulario">
-        <form action="" method=""> 
+        <form action="/processalmacen" method="POST"> 
             
             <label for="almacen">Almacen:</label>
-            <select name="almacen" >
+            <select name="almacen" id="almacen" required >
                 <option value="" disabled selected hidden>Seleccionar almacen</option>
                 <option value="almacen1">Almacen 1</option>
                 <option value="almacen2">Almacen 2</option>
             </select>
 
             <label for="ubicacion">Ubicacion:</label>
-            <input type="text" id="ubicacion" name="ubicacion"  placeholder="ingrese la ubicacion">
+            <input type="text" id="ubicacion" name="ubicacion"  placeholder="ingrese la ubicacion" required>
 
             <input type="submit" value="Guardar Datos"> <a href="../index.html" class="boton"> volver atras</a>
         </form>
